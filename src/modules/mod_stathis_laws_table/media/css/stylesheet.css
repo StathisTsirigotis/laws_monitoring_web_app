@@ -1,0 +1,640 @@
+.mostrecentlawstablewrapper {
+    padding: 0 55px;
+    margin-bottom: 80px;
+}
+table > tbody > tr > td:first-child:hover {
+    background: #92b0c3;
+    color: #fff;
+    transition: 0.3s;
+}
+.lawPresentation {
+    position: absolute;
+    display: none;
+    width: 680px;
+    color: #fff;
+    background: #4f738a;
+    transition: 0.3s;
+    z-index: 999;
+    top: 0;
+    left: 432px;
+    padding: 27px;
+}
+table > tbody > tr > td:first-child:hover > div {
+    display: block
+}
+.lawPresentation > h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+table > tbody > tr > td:first-child {
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    height: 55px;
+}
+.dateMinistry {
+    float: left;
+    padding: 0 15px 3px 0;
+    line-height: 25px;
+    font-size: 15px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-right: 14px;
+    font-weight: bold;
+}
+.lawDesc {
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.lawTitle {
+    width: 350px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.monitorBox {
+    width: 75px;
+    background: #edf8ff;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px 25px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #4f738a;
+    color: #4f738a;
+    font-size: 22px;
+}
+.votesYES {
+    width: 38px;
+    height: 38px;
+    background: #47ff7b;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    position: relative;
+}
+.votesYES:after {
+    position: absolute;
+    content: '\f00c';
+    font-family: FontAwesome;
+    height: 10px;
+    color: #fff;
+    display: block;
+    line-height: 38px;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+.votesNO {
+    width: 38px;
+    height: 38px;
+    background: red;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    position: relative;
+}
+.votesNO:after {
+    position: absolute;
+    content: '\f00d';
+    font-family: FontAwesome;
+    height: 10px;
+    color: #fff;
+    display: block;
+    line-height: 38px;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+.lawTableNotes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.lTNleft > p:first-child {
+    margin-bottom: 15px;
+}
+.lTNleft > p {
+    position: relative;
+}
+.lTNleft > p:before {
+    position: relative;
+    display: inline-block;
+    content: '\f0da';
+    font-family: FontAwesome;
+    color: #92b0c3;
+    font-size: 21px;
+    margin-right: 10px;
+}
+.lTNRight {
+    padding-left: 20px;
+    border-left: 4px solid #4f87bd;
+}
+.mainTabLAw {
+    display: none;
+}
+.mainTabLAw > ul {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 550px;
+    margin: auto;
+    border-bottom: 2px solid #4f738a;
+}
+.mainTabLAw > ul > li {
+    padding: 5px 10px;
+    margin: 0 10px;
+    background: #92b0c3;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+.mainTabLAw > h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.backtoLAws:hover {
+    background: #4f738a;
+    color: #ece9d9;
+}
+.backtoLAws {
+    padding: 4px 15px;
+    background: #edf8ff;
+    color: #4f738a;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+    position: relative;
+}
+.mainTabLAw > ul > li:hover {
+    background: #4f738a;
+    transition: 0.3s;
+    color: #fff;
+}
+.downpageYes {
+    position: relative;
+    display: block;
+    margin: 12px 0;
+}
+.downpageNo {
+    position: relative;
+    display: block;
+    margin: 12px 0;
+}
+.downpageYes:before {
+    width: 38px;
+    height: 38px;
+    background: #47ff7b;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    position: relative;
+    content: '';
+}
+.downpageNo:before {
+    width: 38px;
+    height: 38px;
+    background: #ff0000;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    position: relative;
+    content: '';
+}
+.downpageNo:after {
+    position: absolute;
+    content: '\f00d';
+    font-family: FontAwesome;
+    left: 9px;
+    top: 6px;
+    color: #fff;
+    font-size: 26px;
+}
+.downpageYes:after {
+    position: absolute;
+    content: '\f00c';
+    font-family: FontAwesome;
+    left: 7px;
+    top: 7px;
+    color: #fff;
+    font-size: 26px;
+}
+.clickableTAb {
+    color: #fff!important;
+    background: #4f738a!important;
+}
+.nomikiEkdoxiTAb > div {
+    margin: 0 20px;
+    flex: 0 0 calc(33.3% - 40px);
+}
+.nomikiEkdoxiTAb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.law_start_date {
+    position: absolute;
+    left: -230px;
+    top: 5px;
+    font-size: 14px;
+    color: #4f738a;
+    background: #edf8ff;
+    padding: 4px 15px;
+    border-radius: 15px;
+}
+.art_fulltext > h4 {
+    margin-bottom: 10px;
+    padding: 10px 25px 0;
+}
+.art_fulltext {
+    font-size: 14px;
+    max-height: 0;
+    overflow-y: scroll;
+    background: #edf8ff69;
+    transition: max-height 0.4s ease-in-out;
+}
+.nomikiEkdoxiTAb > div > .monitorBox {
+    width: 300px;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    padding: 7px 25px;
+    transition: 0.3s;
+}
+.nomikiEkdoxiTAb > div > .monitorBox:hover {
+    background: #4f738a;
+    color: #fff;
+}
+.art_titleBox {
+    background: #edf8ff;
+    padding: 7px 25px;
+    border-bottom: 1px dashed #bbbbbb;
+    color: #4f738a;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.article_box {
+    margin-bottom: 20px;
+}
+.art_fulltext > div {
+    color: #5f5f5f;
+    padding: 0 25px 25px;
+}
+.art_fulltext > div > p {
+    margin-bottom: 12px;
+}
+.art_titleBox:hover {
+    background: #4f738a;
+    color: #fff;
+}
+table > tbody > tr > td img {
+    width: 25px;
+}
+table > tbody > tr > td > a > span {
+    position: absolute;
+    background: #000000ba;
+    width: 130px;
+    left: 50%;
+    top: 21px;
+    transform: translateX(-50%);
+    padding: 2px 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0;
+    transition: 0.3s;
+}
+table > tbody > tr > td > a {
+    position: relative;
+}
+table > tbody > tr > td > a:hover > span {
+    opacity: 1;
+}
+.changesCOlorBox {
+    position: absolute;
+    right: -270px;
+    display: block;
+    background: #edf8ff;
+    padding: 4px 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #4f738a;
+}
+.changesCOlorBox > span {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+}
+.changesCOlorBox > span::before {
+    position: relative;
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+.changeClr::before {
+    background: #e6e600;
+}
+.deleteClr::before {
+    background: #ff0000;
+}
+.addClr::before {
+    background: #99cc00;
+}
+.differ_art_change {
+    background: #a2a2a2;
+    color: #fff;
+}
+.differ_art_change_p {
+    background: #636363;
+    color: #fff;
+}
+.progressBarWrapper > h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 100;
+}
+.progressBarWrapper {
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+}
+#progressbar {
+    background-color: #edf8ff;
+    border-radius: 13px;
+    padding: 3px;
+}
+#progressbar > div {
+    background-color: #92b0c3;
+    height: 20px;
+    border-radius: 10px;
+}
+.dateBAr {
+    text-align: center;
+    margin-top: 35px;
+}
+.dateBAr > h3 {
+    font-weight: 100;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.dateBAr > h3 > p {
+    font-weight: bold;
+    font-size: 27px;
+    display: inline-block;
+}
+.dateBarBarInner {
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+    background: #edf8ff;
+    border-radius: 60px;
+}
+.dateBarBarInner > ul {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px 0;
+    max-width: 840px;
+    margin: auto;
+}
+.dateBarBarInner > ul > li {
+    flex: 0 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0px 0px 8px #013556;
+    padding: 25.5px 5px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px #000000;
+    cursor: pointer;
+}
+.colorsExplanationPeriod > div::before {
+    position: relative;
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    border-radius: 50%;
+}
+.colorsExplanationPeriod > div {
+    margin: 0 10px;
+    font-size: 12px;
+    position: relative;
+}
+.colorsExplanationPeriod {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.diavouleusiPeriod::before {
+    background: #47ff7b;
+}
+.epitropiPeriod::before {
+    background: #47d26e;
+}
+.psifoforiaPeriod::before {
+    background: #4ba264;
+}
+.datesMBInner > div {
+    max-width: 550px;
+    margin: 20px auto;
+    background: #edf8ff;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    display: none;
+}
+.datesMBInner > div > p {
+    margin-bottom: 12px;
+}
+.datesMBInner a , .datesMBInner span {
+    color: #4f738a!important;
+    font-weight: bold;
+    cursor: pointer;
+}
+.komma_logo > img {
+    width: 130px;
+    height: 100px;
+}
+.voting_infos_desc {
+    display: none;
+    background: #edf8ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-left: 90px;
+    font-size: 13px;
+    color: #3e3e3e;
+    text-align: center;
+}
+.voting_infos_desc > p {
+    font-size: 17px;
+    text-align: justify;
+}
+.voting_infos_desc > img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+.voting_infos_thesis {
+    display: none;
+    background: #edf8ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-left: 90px;
+    font-size: 13px;
+    color: #3e3e3e;
+}
+.voting_infos_charts {
+	display: none;
+    background: #edf8ff;
+     padding: 20px;
+    border-radius: 12px;
+    margin-left: 90px;
+}
+.voting_infos_box {
+    flex: 1;
+   
+}
+.vic_komma {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.vic_komma_logo {
+    margin: 0 15px;
+    text-align: center;
+}
+.vic_komma_logo > img {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+}
+.vic_komma_logo > i, .vic_komma_logo > span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.vote-yes {
+    color: #32d676;
+}
+.vote-no {
+    color: #ff0000;
+}
+.law_vote_inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.law_vote_tab > ul {
+    background: #edf8ff;
+    padding: 20px;
+    color: #4f738a;
+    border-radius: 13px;
+}
+.law_vote_tab > ul > li:hover {
+    background: #4f738a;
+    color: #edf8ff;
+    transition: 0.3s;
+}
+.law_vote_tab > ul > li {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+.law_vote_tab_clicked {
+	background: #4f738a;
+    color: #edf8ff;
+}
+.vit_box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 0px;
+    border-bottom: 1px solid #c5c5c5;
+}
+.komma_logo {
+    margin-right: 20px;
+}
+.komma_thesis {
+    flex: 1;
+    text-align: justify;
+}
+.vic_komma_logo > span {
+    color: #a0a0a0;
+}
+.named_vote {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.vote_img {
+    margin-right: 20px;
+}
+.vote_img > img {
+    width: 60px;
+}
+.named_vote_inner > div {
+    display: flex;
+    margin-top: 7px;
+}
+.named_vote_inner {
+    font-size: 14px;
+}
+.named_vote_inner > div > p {
+    margin-right: 15px;
+}
+.nmbr_yes {
+    color: #32d676;
+    font-weight: bold;
+}
+.nmbr_no {
+    color: #f91700;
+    font-weight: bold;
+}
+.nmbr_paron {
+    color: #a0a0a0;
+    font-weight: bold;
+}
+.nmbr_apon {
+    color: #000;
+    font-weight: bold;
+}
+.law_vote_message {
+    max-width: 650px;
+    margin: auto;
+    background: #edf8ff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0px 0px 20px;
+}
+.law_vote_message > p {
+    font-size: 20px;
+    font-weight: bold;
+}
