@@ -1,0 +1,19 @@
+.mostrecentlaws {
+    padding: 30px;
+}
+
+.mostrecentlawsinner {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+.mostrecentlawsinner > h2 {
+    margin-bottom: 15px;
+
+}
+.mostrecentlawsinner > p {
+    font-style: italic;
+    font-size: 16px;
+    color: black;
+}
