@@ -1,0 +1,117 @@
+.page-header {
+    display: none;
+}
+html , body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	height: 100%;
+}
+body {
+    background: #ece9d9;
+    font-family: 'Open Sans', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 7px;
+    background: #fdfdfd;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(111, 111, 111);
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background: #4f738a;
+}
+p , h1, h2 , h3 , h4 , h5{
+	margin: 0;
+}
+a {
+	color: unset;
+	text-decoration: none;
+}
+ul , li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+td {
+    border: 2px solid #ece9d9;
+}
+table {
+    border-collapse: collapse;
+    background: #ffffff;
+}
+table > tbody > tr:first-child > th {
+    text-align: left;
+    padding: 7px 15px;
+    background: #92b0c3;
+    border: 2px solid #ece9d9;
+}
+table > tbody > tr > td {
+    text-align: left;
+    padding: 7px 20px;
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+    border-spacing: 1px;
+    border-bottom-color: #00000057;
+}
+table > tbody > tr > td > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+table > tbody > tr:last-child > td {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #000;
+}
+.laws-main-header {
+    min-height: 100%;
+    background: #4f738a;
+}
+.laws-main-header-inner {
+    text-align: center;
+    padding: 30px;
+    font-size: 45px;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #00000047;
+}
+.laws-main-header-inner > p {
+    position: relative;
+    color: #fff;
+    margin-bottom: 80px;
+}
+.laws-main-header-inner > p:after {
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 1px;
+    background-image: linear-gradient(to right, #4f738a, #b9b9b9 , white);
+    bottom: 5px;
+    left: 27%;
+}
+.homepageWrapeer {
+    max-width: 1280px;
+    margin: auto;
+}
+.laws-main-header-inner > span {
+    max-width: 200px;
+    margin: auto;
+    margin-top: 80px;
+    display: block;
+    padding: 5px;
+    background: #ffffff7d;
+    color: #000;
+    border-radius: 20px;
+    font-size: 24px;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: none;
+    border: 1px solid;
+}
+.laws-main-header-inner > span:hover {
+    background: #fcc16d;
+    color: white;
+}
