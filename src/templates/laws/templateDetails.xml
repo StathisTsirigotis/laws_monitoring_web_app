@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template">
+	<name>laws</name>
+	<creationDate>2019-10-30</creationDate>
+	<author>Stathis TSirigotis</author>
+	<authorEmail>stathis.tsirigotis@gmail.com</authorEmail>
+	<copyright>Stathis Tsirigotis 2019</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.2</version>
+	<description>My New Template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>media</folder>
+	</files>
+	<positions>
+		<position>header</position>
+		<position>laws_table</position>
+		<position>search</position>
+	</positions>
+</extension>
